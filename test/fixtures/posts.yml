@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  text: MyString
+  url: MyString
+  expired: false
+  public: false
+
+two:
+  text: MyString
+  url: MyString
+  expired: false
+  public: false
