@@ -1,2 +1,16 @@
 <h1>Posts#index</h1>
+
 <p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each do |item| %>
+  <strong>Posty Text:</strong>
+  <%= item.text %></br>
+  <strong>Link:</strong>
+  <%= item.url %></br>
+  <strong>Public?:</strong>
+  <%= item.public %></br>
+  <strong>Expired?:</strong>
+  <%= item.expired %></br>
+</br>
+
+<% end %>
