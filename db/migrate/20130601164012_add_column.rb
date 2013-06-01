@@ -4,5 +4,6 @@ class AddColumn < ActiveRecord::Migration
   end
 
   def down
+    
   end
 end

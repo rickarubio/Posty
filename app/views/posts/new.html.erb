@@ -9,7 +9,7 @@
 <p>
   <%= f.label :public %>
   <%= f.check_box :public %>
-  <%= f.select :expired, [["Expriation Date", false]] %>
+  <%= f.select :expiration_date, [["Expiration Date"], ["One Day", Time.now + 120]] %>
   <%= f.submit %>
 </p>
 

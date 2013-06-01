@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130601164012) do
+ActiveRecord::Schema.define(:version => 20130601170121) do
 
   create_table "posts", :force => true do |t|
     t.string   "text"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20130601164012) do
     t.boolean  "public"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.datetime "expriation_date"
+    t.datetime "expiration_date"
   end
 
 end
