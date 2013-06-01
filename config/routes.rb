@@ -1,5 +1,5 @@
 Posty::Application.routes.draw do
-  root :to => 'welcome#index' 
+  root :to => 'posts#new' 
   resources :posts
   #get "posts/index"
   #get "posts/show"
