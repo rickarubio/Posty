@@ -1,6 +1,7 @@
 Posty::Application.routes.draw do
   root :to => 'posts#new' 
   resources :posts
+  match "/expired", to: "posts#expired"
   #get "posts/index"
   #get "posts/show"
   #get "welcome/index"

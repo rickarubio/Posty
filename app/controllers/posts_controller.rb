@@ -6,8 +6,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    if Time.now > @post.created_at + 120
-	    render text: "Sorry this posty has expired"
+    if Time.now > @post.expiration_date
+    redirect_to expired_path
     end
   end
 
@@ -29,6 +29,10 @@ class PostsController < ApplicationController
    # @post.save
    # redirect_to @post
    
+  end
+
+  def expired
+
   end
 
 end
